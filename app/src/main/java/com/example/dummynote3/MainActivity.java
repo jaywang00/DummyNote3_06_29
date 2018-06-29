@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         startManagingCursor(c);
         SimpleCursorAdapter scAdapter = new SimpleCursorAdapter(
             this,
-            R.layout.simple_list_item_1,
+            R.layout.simple_list_items,
             c,
-            new String[]{"機構名稱"},
-            new int[]{R.id.text1},
+            new String[]{"機構名稱","地址","電話"},
+            new int[]{R.id.tvNAME,R.id.tvADDRESS,R.id.tvPHONE},
             SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
         listView.setAdapter(scAdapter);
     }
